@@ -1,0 +1,51 @@
+html {
+    font-size: small; /*the base font size is now 10 pixels high*/
+    background-color: #00539f;
+    font-family: 'Indie+Flower', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /*this should be the rest of the output you got from Google fonts*/
+}
+h1 {
+    font-size: x-large;
+    text-align: center;
+}
+body {
+    width:600px;
+    background-color: #ff9500;
+    margin:0 auto;  /*setting 2 values on a property like margin, or padding, the first affects the element's TOP & BOTTOM sides (zero in this case), the 2nd value the LH and RH sides. auto is a special attribute that divides the av horiz space evenly between L & R*/
+    padding: 0 20px 22px 24px;  /* TRBL */
+    border:5px solid black;
+}
+h1 {
+    margin: 0; /* override, so the browser doesn't apply default styling to the <h1> element*/
+    padding: 20px 0;        /*set the heading top & bottom padding to 20px */
+    color: #00539f;
+    text-shadow: 3px 3px 1px black; /*hor offset -ve is left; vert offset -ve is up; blur radius, big is more blurry shadow; base colour*/
+}
+img {
+    display: block; /*to apply margins to an image, we must apply block-level behavior to it*/
+    margin: 0 auto; /* TRICK: 2 values, see for <body> above. These 2 values will centre the image.*/
+    /*If an image is larger the width set on the body (600 pixels), it will overflow the body and spill out into the rest of the page. 
+        To rectify this, you can either 1) reduce the image's width using a graphics editor, or 2)  size the image using CSS by setting the width property on the <img> element with a smaller value (e.g., 400 px;)*/
+    width: 400px;
+}
+p, li {
+    font-size:16px;
+    line-height:2;
+    letter-spacing:1px;
+}
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+}
+/*
+p {
+  color: red;
+  width: 500px;
+  border: 1px solid blue;
+}
+*/
